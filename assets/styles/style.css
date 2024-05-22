@@ -1,0 +1,97 @@
+main , footer{
+    text-align: center;
+    color: rgb(75, 74, 74);
+}
+
+/* header */
+header{
+    height: 3.5em;
+    position: relative;
+}
+header img{
+    width: 8em;
+    position: absolute;
+    left: 12em;
+}
+nav{
+    position: absolute;
+    top:-1em;
+    right: 12em;
+}
+nav ul{
+    padding-left:0;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    list-style:none;
+    float: left;
+    margin: 1rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+
+/* main */
+main{
+    margin-bottom: 5rem;
+}
+.mainvisual{
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    margin-bottom: 4em;
+}
+div{
+    margin-bottom: 1.5em;;
+    justify-content: center;
+}
+h2{
+    font-size: xx-large;
+    border-bottom: 1px solid;
+    display: inline-block;
+    margin-bottom: 4rem;
+}
+.horizon{
+    display:flex;
+    justify-content: center;
+}
+.icon{
+    border-radius: 50%;
+    width: 8%;
+    height: 8%;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+span{
+    font-size: small;
+}
+/* #about */
+#about h3{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: medium;
+    margin-bottom: 0.5rem;
+}
+/* #bicycle */
+ul{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    list-style:none;
+    font-size: small;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+}
+li img{
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+/* footer */
+footer{
+    font-size: x-small;
+}
