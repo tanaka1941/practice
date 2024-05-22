@@ -95,3 +95,61 @@ li img{
 footer{
     font-size: x-small;
 }
+
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    /* header */
+    header img{
+        width: 8em;
+        position: absolute;
+        left: 1em;
+    }
+    nav{
+        position: absolute;
+        top:-1em;
+        right: 0em;
+    }
+    /* main */
+    main{
+        margin-bottom: 8rem;
+    }
+    .mainvisual{
+        /* width: 100%;
+        object-fit: cover; */
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    div{
+        margin-bottom: 9rem;
+    }
+    h2{
+        font-size: xx-large;
+        border-bottom: 1px solid;
+        display: inline-block;
+        margin-bottom: 4rem;
+    }
+    .horizon{
+        display:block;
+    }
+    .icon{
+        border-radius: 50%;
+        width: 20%;
+        height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about h3{
+        margin-left: 4rem;
+    }
+    /* #bicycle */
+    ul{
+        width: 100%;
+        padding-left:0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+}
