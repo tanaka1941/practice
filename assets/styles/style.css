@@ -1,3 +1,7 @@
+body{
+    margin-left: 0;
+    font-size: 0.9rem;
+}
 main , footer{
     text-align: center;
     color: rgb(75, 74, 74);
@@ -5,18 +9,30 @@ main , footer{
 
 /* header */
 header{
-    height: 3.5em;
+    height: 3.5rem;
     position: relative;
 }
-header img{
-    width: 8em;
+.navbar{
     position: absolute;
-    left: 12em;
+    left: 5%;
+    max-width: 950px;
+    position: relative;
+    /* display: -webkit-flex; */
+    display: flex;
+    /* -webkit-justify-content: space-between; */
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header img{
+    width: 7.5rem;
+    position: absolute;
+    left: 0rem;
 }
 nav{
     position: absolute;
-    top:-1em;
-    right: 12em;
+    right: 3.5%;
 }
 nav ul{
     padding-left:0;
@@ -26,9 +42,10 @@ nav ul{
 nav li{
     list-style:none;
     float: left;
-    margin: 1rem;
+    margin-right: 2.5rem;
 }
 a{
+    font-size: 0.9rem;
     text-decoration: none;
     color: rgb(75, 74, 74);
 }
@@ -38,20 +55,16 @@ main{
     margin-bottom: 5rem;
 }
 .mainvisual{
-    width: 100%;
+    width:100vw;
     object-fit: cover;
     height: 600px;
-    margin-bottom: 4em;
-}
-div{
-    margin-bottom: 1.5em;;
-    justify-content: center;
+    margin-bottom: 3.5rem;
 }
 h2{
     font-size: xx-large;
     border-bottom: 1px solid;
     display: inline-block;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
 }
 .horizon{
     display:flex;
@@ -59,30 +72,28 @@ h2{
 }
 .icon{
     border-radius: 50%;
-    width: 8%;
-    height: 8%;
+    width: 100px;
+    height: 100px;
     margin-right: 2rem;
     margin-top: 1rem;
 }
-span{
-    font-size: small;
-}
 /* #about */
+#about , #bicycle{
+    margin-bottom: 5rem;;
+}
 #about h3{
     text-transform: uppercase;
     text-align: left;
-    font-size: medium;
     margin-bottom: 0.5rem;
 }
 /* #bicycle */
 ul{
-    width: 70%;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
 }
 li{
     list-style:none;
-    font-size: small;
     margin-right:0.5rem;
     margin-left:0.5rem;
 }
@@ -94,4 +105,55 @@ li img{
 /* footer */
 footer{
     font-size: x-small;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+    /* header */
+    header img{
+        position: absolute;
+        left: 0rem;
+    }
+    nav{
+        position: absolute;
+        right: 0rem;
+    }
+    /* main */
+    main{
+        margin-bottom: 8.5rem;
+    }
+    .mainvisual{
+        object-fit: cover;
+        height: 100vh;
+        margin-bottom: 4rem;
+    }
+    h2{
+        margin-bottom: 3rem;
+    }
+    .horizon{
+        display:block;
+    }
+    .icon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about , #bicycle{
+        margin-bottom: 5rem;
+    }
+    #about h3{
+        margin-left: 10vw;
+    }
+    /* #bicycle */
+    ul{
+        width: 95%;
+        padding-left:0;
+    }
+    li{
+        margin-right:0.5rem;
+        margin-left:0.5rem;
+        margin-bottom: 2.5rem;
+    }   
 }
