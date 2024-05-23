@@ -1,3 +1,6 @@
+body{
+    margin-left: 0;
+}
 main , footer{
     text-align: center;
     color: rgb(75, 74, 74);
@@ -5,18 +8,18 @@ main , footer{
 
 /* header */
 header{
-    height: 3.5em;
+    height: 3.5rem;
     position: relative;
 }
 header img{
-    width: 8em;
+    width: 7.5rem;
     position: absolute;
-    left: 12em;
+    left: 13.5rem;
 }
 nav{
     position: absolute;
-    top:-1em;
-    right: 12em;
+    top:-1rem;
+    right: 11rem;
 }
 nav ul{
     padding-left:0;
@@ -38,20 +41,16 @@ main{
     margin-bottom: 5rem;
 }
 .mainvisual{
-    width: 100%;
+    width:100vw;
     object-fit: cover;
     height: 600px;
-    margin-bottom: 4em;
-}
-div{
-    margin-bottom: 1.5em;;
-    justify-content: center;
+    margin-bottom: 3.5rem;
 }
 h2{
     font-size: xx-large;
     border-bottom: 1px solid;
     display: inline-block;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
 }
 .horizon{
     display:flex;
@@ -59,15 +58,15 @@ h2{
 }
 .icon{
     border-radius: 50%;
-    width: 8%;
-    height: 8%;
+    width: 100px;
+    height: 100px;
     margin-right: 2rem;
     margin-top: 1rem;
 }
-span{
-    font-size: small;
-}
 /* #about */
+#about , #bicycle{
+    margin-bottom: 5rem;;
+}
 #about h3{
     text-transform: uppercase;
     text-align: left;
@@ -76,7 +75,7 @@ span{
 }
 /* #bicycle */
 ul{
-    width: 70%;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -98,22 +97,23 @@ footer{
 
 
 
-@media screen and (max-width: 959px) {
-	/* 959px以下に適用されるCSS（タブレット用） */
+@media screen and (max-width: 600px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
     /* header */
     header img{
-        width: 8em;
+        width: 8rem;
         position: absolute;
-        left: 1em;
+        left: 1rem;
     }
     nav{
         position: absolute;
-        top:-1em;
-        right: 0em;
+        top:-1rem;
+        right: 0rem;
     }
     /* main */
     main{
-        margin-bottom: 8rem;
+        margin-bottom: 8.5rem;
     }
     .mainvisual{
         /* width: 100%;
@@ -121,35 +121,33 @@ footer{
         height: auto;
         margin-bottom: 4rem;
     }
-    div{
-        margin-bottom: 9rem;
-    }
     h2{
         font-size: xx-large;
         border-bottom: 1px solid;
         display: inline-block;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
     .horizon{
         display:block;
     }
     .icon{
-        border-radius: 50%;
-        width: 20%;
-        height: 20%;
         margin-left: auto;
         margin-right: auto;
     }
+    #about , #bicycle{
+        margin-bottom: 5rem;;
+    }
     #about h3{
-        margin-left: 4rem;
+        margin-left: 3%;
     }
     /* #bicycle */
     ul{
-        width: 100%;
+        width: 95%;
         padding-left:0;
     }
-}
-
-@media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
+    li{
+        margin-right:0.5rem;
+        margin-left:0.5rem;
+        margin-bottom: 2.5rem;
+    }   
 }
