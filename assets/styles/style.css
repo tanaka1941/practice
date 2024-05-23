@@ -1,5 +1,6 @@
 body{
     margin-left: 0;
+    font-size: 0.9rem;
 }
 main , footer{
     text-align: center;
@@ -11,15 +12,27 @@ header{
     height: 3.5rem;
     position: relative;
 }
+.navbar{
+    position: absolute;
+    left: 5%;
+    max-width: 950px;
+    position: relative;
+    /* display: -webkit-flex; */
+    display: flex;
+    /* -webkit-justify-content: space-between; */
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 header img{
     width: 7.5rem;
     position: absolute;
-    left: 13.5rem;
+    left: 0rem;
 }
 nav{
     position: absolute;
-    top:-1rem;
-    right: 11rem;
+    right: 3.5%;
 }
 nav ul{
     padding-left:0;
@@ -29,9 +42,10 @@ nav ul{
 nav li{
     list-style:none;
     float: left;
-    margin: 1rem;
+    margin-right: 2.5rem;
 }
 a{
+    font-size: 0.9rem;
     text-decoration: none;
     color: rgb(75, 74, 74);
 }
@@ -70,7 +84,6 @@ h2{
 #about h3{
     text-transform: uppercase;
     text-align: left;
-    font-size: medium;
     margin-bottom: 0.5rem;
 }
 /* #bicycle */
@@ -81,7 +94,6 @@ ul{
 }
 li{
     list-style:none;
-    font-size: small;
     margin-right:0.5rem;
     margin-left:0.5rem;
 }
@@ -102,13 +114,11 @@ footer{
 
     /* header */
     header img{
-        width: 8rem;
         position: absolute;
-        left: 1rem;
+        left: 0rem;
     }
     nav{
         position: absolute;
-        top:-1rem;
         right: 0rem;
     }
     /* main */
@@ -121,9 +131,6 @@ footer{
         margin-bottom: 4rem;
     }
     h2{
-        font-size: xx-large;
-        border-bottom: 1px solid;
-        display: inline-block;
         margin-bottom: 3rem;
     }
     .horizon{
@@ -134,7 +141,7 @@ footer{
         margin-right: auto;
     }
     #about , #bicycle{
-        margin-bottom: 5rem;;
+        margin-bottom: 5rem;
     }
     #about h3{
         margin-left: 10vw;
