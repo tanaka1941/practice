@@ -80,12 +80,7 @@ main {
 	}
 }
 
-footer {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto; 
-	font-size: 10px;
-}
+
 
 @media (max-width: 1024px) {
 	main{
@@ -121,8 +116,5 @@ footer {
 				padding-right: 50px;
 			}
 		}
-	}
-	footer {
-		width: 80%;
 	}
 }
