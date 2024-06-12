@@ -1,9 +1,11 @@
+/*-- navbar --*/
 * {
     margin: 0;
 }
 .container{
 	width: 100%;
 	padding-bottom: 20px;
+	background-color: #dff5ff;
 }
 .navigation{
 	height: 80px;
@@ -27,7 +29,7 @@
 			justify-content: space-around;
 			li {
 				list-style-type: none;
-				margin-right: 20px;
+				margin-left: 20px;
 				a{
 					text-decoration: none;
 					color: white;
