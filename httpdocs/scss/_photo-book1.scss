@@ -1,21 +1,11 @@
+/* -------------------
+page-photobook1
+--------------------*/
 .page-photobook1{
-	body {
-		background-color:#DFF5FF;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto; 
-	}
-	main {
-		width:  1000px;
-		margin-left: auto;
-		margin-right: auto; 
-	}
-
+	width:  1000px;
+	margin: 0 auto;
 	.top {
-		margin-top: 80px;
-		margin-bottom: 50px;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 80px auto 50px auto;
 		a{
 			text-decoration: none;
 			color: black;
@@ -50,9 +40,7 @@
 	.detail {
 		width: 600px;
 		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 100px;
+		margin: 0 auto 100px auto;
 		h3 {
 			font-size: 18px;
 		}
@@ -66,13 +54,18 @@
 		.detail-text {
 			display: block;
 			width: 270px;
-			margin-top: 50px;
-			margin-left: 30px;
+			margin: 30px 0 0 30px;
 			hr {
 				border: solid 0.1px #DDDDDD;
+				margin: 10px 0;
 			}
-			td , p {
+			td {
 				font-size: 14px;
+				padding-right: 20px;
+			}
+			p {
+				font-size: 14px;
+				margin-bottom: 10px;
 			}
 			a {
 				color: black;
@@ -80,42 +73,27 @@
 			}
 		}
 	}
+}
 
-
-
-	@media (max-width: 1024px) {
-		main{
-			width: 100%;
-			margin-left: 0;
-			padding-left: 0;
-		}
+@media (max-width: 1024px) {
+	.page-photobook1{
+		width: 100%;
 		.top{
 			width: 97%;
-			margin-left: auto;
-			margin-right: auto;
 		}
 		.index {
 			padding: 30px 50px;
 			margin-left: 0;
 		}
 		.detail {
-			width: 100%;
-			display: inline-block;
-			margin-left: auto;
-			margin-right: auto;
-			.detail-img{
-				width: 80%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			.detail-text {
-				width: 80%;
-				margin-left: auto;
-				margin-right: auto;
-				margin-top: 0;
-				td {
-					padding-right: 50px;
-				}
+			width: 80%;
+			display: flex;
+			flex-direction: column; 
+			align-items: center; 
+			margin: 10px auto 50px auto;
+			.detail-img , .detail-text {
+				width: 100%;
+				margin: 10px auto;
 			}
 		}
 	}
